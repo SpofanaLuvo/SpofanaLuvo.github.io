@@ -12,7 +12,7 @@ section {
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-	z-index: -2;
+	z-index: 0;
 }
 .overlay {
 	background: rgb(0, 0, 0);
@@ -33,6 +33,10 @@ nav {
 nav a {
 	text-decoration: none;
 }
+nav a:hover {
+	transform: scale(1.1);
+	color: #03a747;
+}
 nav ul {
 	float: right;
 	margin-right: 20px;
@@ -51,6 +55,12 @@ nav ul li a {
 	padding: 5px 20px 5px 20px;
 	text-decoration: none;
 }
+nav ul li a:hover {
+	transform: scale(1.1);
+	background-color: #03a747;
+	border-radius: 2px;
+	color: black;
+}
 
 .logo {
 	font-family: "Syne", monospace;
@@ -58,9 +68,6 @@ nav ul li a {
 	font-size: 25px;
 	font-weight: bold;
 	line-height: 80px;
-}
-.logo a {
-	text-decoration: none;
 }
 
 .welcome-text-container {
@@ -90,6 +97,13 @@ nav ul li a {
 	background: black;
 	color: white;
 	letter-spacing: 1px;
+	z-index: 10;
+}
+.welcome-text-container button:hover {
+	transform: scale(1.1);
+	background-color: #03a747;
+	color: black;
+	border-color: black;
 }
 .row-content {
 	margin: 0px auto;
@@ -97,10 +111,109 @@ nav ul li a {
 	border-bottom: 2px solid white;
 	min-height: 200px;
 }
-.contact {
+h1 {
+	font-family: "Syne", monospace;
+	font-weight: bold;
+	color: white;
+	font-size: 55px;
+}
+#about-me,
+#skills-text {
+	font-family: "Josefin Sans", monospace;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+}
+#contact-me {
+	font-family: "Josefin Sans", monospace;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+.copyright {
+	font-family: "Josefin Sans", monospace;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+}
+.img-fluid {
+	border-radius: 10px;
+	border: 2px solid rgb(39, 39, 39);
+}
+.skills li {
+	list-style: none;
+	position: relative;
 	display: inline-flex;
+	margin: 10px;
+	padding-left: 30px;
+	padding-right: 5px;
+}
+.skills li::before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 34px;
+	height: 34px;
+	border-radius: 34px;
+	background: transparent;
+	transition: background-color 0.5s, width 0.5s;
+	transition-delay: 0.5s 0s;
+	border: 1px solid rgb(247, 241, 241);
+	box-sizing: border-box;
+}
+
+.skills li:hover::before {
+	width: 100%;
+	background: #03a747;
+	transition-delay: 0s 0.5s;
+}
+.skills li:hover p {
+	color: black;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.skills li:hover::after {
+	width: 6px;
+	height: 6px;
+	content: " ";
+	position: absolute;
+	top: 13px;
+	left: 20px;
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	transform: rotate(45deg) scale(1.5);
+	transition: 0.5s;
+}
+.skills li p {
+	position: relative;
+	z-index: 10;
+	padding: 5px 10px;
+	color: white;
+	font-family: "Josefin Sans", monospace;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.platform1 a {
+	color: #03a747;
+}
+.platform2 a {
+	color: #03a747;
+}
+.platform3 a {
+	color: #03a747;
 }
 .footer {
 	margin: 0px auto;
 	padding: 20px 0px 20px 0px;
+}
+@media only screen and (max-width: 786px) {
+	nav ul {
+		float: none;
+		margin: 0 10px;
+		list-style: none;
+		z-index: 1;
+	}
 }

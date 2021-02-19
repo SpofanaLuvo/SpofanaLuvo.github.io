@@ -22,24 +22,24 @@
     <!--HOME section-->
     <section>
         <div class="container">
-            <div class="row">
+            <div class="row " id="home">
                 <!--NAVIGATION-->
                 <nav>
                     <!--Nav Logo-->
-                    <a href="#" class="logo">Luvo Spofana</a>
+                    <a href="#home" class="logo">Luvo Spofana</a>
                     <!--Nav Menu-->
                     <ul>
-                        <li><a href="#">ABOUT ME</a></li>
-                        <li><a href="#">SKILLS</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#aboutMe">ABOUT ME</a></li>
+                        <li><a href="#skills">SKILLS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
                 <!--WELCOME TEXT-->
-                <div class="welcome-text-container">
+                <div class="welcome-text-container col -12 .hidden-md-down">
                     <p>Let's bring your ideas to life.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sit officia doloribus deserunt nesciunt, maxime magni tempore aut, impedit numquam sint, dolor doloremque accusamus asperiores maiores illum. Id, delectus et!</p>
+                    <p>The internet has become one of the biggest places to build credibility considering that most individuals first look businesses and organizations up online before trusting them enough to pay for their products and services, and also look each other up before connecting. Now, more than ever, is the best time to get yourself a digital business card - a website!<p>
 
-                    <button>I need a website >></button>
+                    <button onclick="window.location.href='#contact'">I need a website >></button>
                 </div>
                 <div class="overlay"></div>
             </div>
@@ -49,39 +49,40 @@
     <!--ABOUT ME section-->
     <div class="container">
         <div class="row row-content align-items-center">
-            <div class=" col-12 col-sm-4 col-md-3">
-                <!--<img src="images/keyboard black1.jpg">-->
+            <div class=" col-12 col-sm-4 col-md-3 order-sm-last">
+                <img src="images/spofana.jpg" class="img-fluid">
+
             </div>
-            <div class="col col-sm col-md">
-                 <h1>About Me</h1>
-                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque illo officiis amet perspiciatis quisquam omnis recusandae autem corrupti delectus, iure enim, aliquid hic tenetur nulla sunt necessitatibus tempora error exercitationem.</p> 
-                               
+            <div class="col col-sm col-md order-sm-first">
+                 <h1 id="aboutMe">About Me</h1>
+                 <p id="about-me"> Luvo Spofana: An innovative, task-driven individual, equipped with curiosity that constantly questions things to make improvements, and proficient in creating websites with appealing user interfaces, writing & testing code, and implementing new features based on user requirements and feedback.</p>                               
              </div>
         </div>
 
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3 order-sm-last">
-
+            <div class="col-12 col-sm-4 col-md-3">
+                <img src="images/dev.jpg" class="img-fluid">
             </div>
              <!--SKILLS section-->
-            <div class=" skills col col-sm col-md order-sm-first">
-                <div class="skills-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum modi iusto maxime, doloremque dolores ex ipsam quos atque praesentium veniam nemo, consequuntur fugit neque consectetur reprehenderit ut hic nihil corporis?
+            <div class=" skills col col-sm col-md">
+                <h1 id="skills">Skills</h1>
+                <div id="skills-text">
+                    My set of skills I have acquired from tertiary and self education:
                 </div>
                 <div>
-                    <h1>Skills</h1>
                     <p>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>PHP</li>
-                            <li>SQL</li>
-                            <li>C#</li>
-                            <li>Python</li>
-                            <li>Bootstrap</li>
-                            <li>Reactjs</li>
-                            <li>Angular</li>
+                        <ul class="skills">
+                            <li><p>HTML</p></li>
+                            <li><p>CSS</p></li>
+                            <li><p>Javascript</p></li>
+                            <li><p>PHP</p></li>
+                            <li><p>SQL</p></li>
+                            <li><p>C#</p></li>
+                            <li><p>Python</p></li>
+                            <li><p>Java</p></li>
+                            <li><p>Bootstrap</p></li>
+                            <li><p>Reactjs</p></li>
+                            <li><p>Angular</p></li>
                         </ul> 
                     </p>                               
                 </div>
@@ -90,37 +91,25 @@
        
         <div class="row row-content align-items-center">
              <!--CONTACT DETAILS section-->
-                <div class="col-12 col-sm-4 col-md-3">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, cum laboriosam totam blanditiis animi vel, eius hic doloremque sed impedit, vitae sint veniam voluptates officia quae! Corporis autem beatae rem!</p>
+                <div class="col-12 col-sm-4 col-md-6 platform">
+                    <h1 id="contact">Contact me</h1>
+                    <p id="contact-me">Do you have a project in mind? Are you looking for a customer-oriented developer that is obsessed with the relationship between users and computing systems, taking into account user experience and satisfaction, systems functionality and interaction design principles to add to your team? Looking to build credibility for yourself or your organization?<br> You have come to right place. Get in touch and let's make your thoughts and dreams a reality </p>
                 </div>
-                <div class="col col-sm col-md contact">
-                    <div class=" platform-1">
-                        <span>icon</span>
-                        <p class="platform">Email</p>
-                        <p>Email me, I respond promptly to emails</p>
-                    </div>
-                    <div class="platform-2">
-                        <span>icon</span>
-                        <p class="platform">LinkedIn</p>
-                        <p>Add me to your LinkedIn and lets's connect.</p>
-                    </div>
-                    <div class="platform-3">
-                        <span>icon</span>
-                        <p class="platform">Git</p>
-                        <p>Follow me to get a better idea of the kind of person I am.</p>
-                    </div>
-                </div>           
+                <div class="col-2 col-sm-2 col-md-2 platform1">
+                    <span class="platform"><a href="mailto:spofanaluvo@gmail.com"><i class="fas fa-envelope-open-text fa-3x"></i></a></span>
+                </div>
+                <div class="col-2 col-sm-2 col-md-2 platform2">
+                    <span><a href="linkedin.com/in/luvo-spofana-8530a2195"><i class="fab fa-linkedin fa-3x"></i></a></span>
+                </div>
+                <div class="col-2 col-sm-2 col-md-2 platform3">
+                    <span><a href="github.com/SpofanaLuvo"><i class="fab fa-github fa-3x"></i></a></span>
+                </div>
+                   
         </div>
     </div>
             
     <!--FOOTER-->
     <div class="container footer">
-        <div class="row">
-            <div class="footer">
-                <p>Luvo Spofana</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos laborum, excepturi dolores aspernatur quis perspiciatis praesentium officiis, totam similique eius magnam itaque. Animi repudiandae harum, voluptas eaque illum sed numquam.</p>
-            </div>
-        </div>
         <div class="row justify-content-center">
             <div class="col-auto">
                 <p class="copyright">Copyright by Lu Anafops &trade; 2021</p>
