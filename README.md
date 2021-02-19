@@ -1,1 +1,1 @@
-https//:SpofanaLuvo.github.io
+https://SpofanaLuvo.github.io
