@@ -6,15 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--STYLESHEET-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500&display=swap" rel="stylesheet">
+    
     <!--FONTAWESOME-->
     <script src="https://kit.fontawesome.com/4b97405ff4.js" crossorigin="anonymous"></script>
+
     <!--BOOSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <title>Luvo Spofana</title>
 </head>
@@ -55,7 +64,7 @@
             </div>
             <div class="col col-sm col-md order-sm-first">
                  <h1 id="aboutMe">About Me</h1>
-                 <p id="about-me"> Luvo Spofana: An innovative, task-driven individual, equipped with curiosity that constantly questions things to make improvements, and proficient in creating websites with appealing user interfaces, writing & testing code, and implementing new features based on user requirements and feedback.</p>                               
+                 <p id="about-me"> I like to think of myself as an innovative, task-driven individual, equipped with curiosity that constantly questions things to make improvements, and proficient in creating websites with appealing user interfaces, writing & testing code, and implementing new features based on user requirements and feedback.</p>                               
              </div>
         </div>
 
@@ -88,21 +97,47 @@
                 </div>
             </div>
         </div>
-       
+
+       <!-- CONTACT ME -->
         <div class="row row-content align-items-center">
              <!--CONTACT DETAILS section-->
-                <div class="col-12 col-sm-4 col-md-6 platform">
+                <div class="col-12 col-sm-4 col-md-5 platform">
                     <h1 id="contact">Contact me</h1>
-                    <p id="contact-me">Do you have a project in mind? Are you looking for a customer-oriented developer that is obsessed with the relationship between users and computing systems, taking into account user experience and satisfaction, systems functionality and interaction design principles to add to your team? Looking to build credibility for yourself or your organization?<br> You have come to right place. Get in touch and let's make your thoughts and dreams a reality </p>
+                    <div id="mycarousel" class="carousel slide carousel-fade " data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active" data-interval="10000">
+                                <img class="d-block img-fluid" src="images/Idea.jpg" alt="Idea">
+                                <div class="carousel-caption">
+                                    <p>Do you have a project in mind?</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-interval="10000">
+                                <img class="d-block img-fluid" src="images/projectTeam.jpg" alt="Team">
+                                <div class="carousel-caption ">
+                                    <p> Are you looking for a customer-oriented developer that is obsessed with the relationship between users and computing systems, taking into account user experience and satisfaction, systems functionality and interaction design principles to add to your team??</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-interval="10000">
+                                <img class="d-block img-fluid" src="images/line.jpg" alt="credible">
+                                <div class="carousel-caption">
+                                    <p>Looking to build credibility for yourself or your organization??</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-2 col-sm-2 col-md-2 platform1">
-                    <span class="platform"><a href="mailto:spofanaluvo@gmail.com"><i class="fas fa-envelope-open-text fa-3x"></i></a></span>
-                </div>
-                <div class="col-2 col-sm-2 col-md-2 platform2">
-                    <span><a href="linkedin.com/in/luvo-spofana-8530a2195"><i class="fab fa-linkedin fa-3x"></i></a></span>
-                </div>
-                <div class="col-2 col-sm-2 col-md-2 platform3">
-                    <span><a href="github.com/SpofanaLuvo"><i class="fab fa-github fa-3x"></i></a></span>
+                <div class="col col-sm col-md align-items-center platforms">
+                    <span><a href="mailto:spofanaluvo@gmail.com"><i class="fas fa-envelope-open-text fa-3x"></i></a></span>
+                
+                    <span><a href="https://linkedin.com/in/luvo-spofana-ls"><i class="fab fa-linkedin fa-3x"></i></a></span>
+               
+                    <span><a href="https://github.com/SpofanaLuvo"><i class="fab fa-github fa-3x"></i></a></span>
                 </div>
                    
         </div>

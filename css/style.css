@@ -130,6 +130,22 @@ h1 {
 	font-weight: bold;
 	font-size: 20px;
 }
+
+.carousel {
+	background: black;
+}
+.carousel-item {
+	height: 300px;
+}
+.carousel-item img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.9;
+}
+
 .copyright {
 	font-family: "Josefin Sans", monospace;
 	color: white;
@@ -196,15 +212,10 @@ h1 {
 	font-size: 17px;
 }
 
-.platform1 a {
+.platforms a {
 	color: #03a747;
 }
-.platform2 a {
-	color: #03a747;
-}
-.platform3 a {
-	color: #03a747;
-}
+
 .footer {
 	margin: 0px auto;
 	padding: 20px 0px 20px 0px;
