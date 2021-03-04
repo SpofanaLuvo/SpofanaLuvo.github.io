@@ -230,13 +230,19 @@ h1 {
 	nav ul {
 		display: none;
 	}
+	section {
+		height: 35vh;
+	}
+	.welcome-text-container button {
+		width: 100%;
+	}
 	.welcome-text-container p:nth-child(1) {
 		font-size: 30px;
 	}
 	.welcome-text-container p:nth-child(2) {
 		display: none;
 	}
-	section {
-		height: 50vh;
+	.carousel-item-2 {
+		font-size: 19px;
 	}
 }
