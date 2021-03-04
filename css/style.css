@@ -117,6 +117,10 @@ h1 {
 	color: white;
 	font-size: 55px;
 }
+.img-fluid {
+	border-radius: 10px;
+	border: 2px solid rgb(39, 39, 39);
+}
 #about-me,
 #skills-text {
 	font-family: "Josefin Sans", monospace;
@@ -124,38 +128,7 @@ h1 {
 	font-weight: bold;
 	font-size: 25px;
 }
-#contact-me {
-	font-family: "Josefin Sans", monospace;
-	color: white;
-	font-weight: bold;
-	font-size: 20px;
-}
 
-.carousel {
-	background: black;
-}
-.carousel-item {
-	height: 300px;
-}
-.carousel-item img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0.9;
-}
-
-.copyright {
-	font-family: "Josefin Sans", monospace;
-	color: white;
-	font-weight: bold;
-	font-size: 15px;
-}
-.img-fluid {
-	border-radius: 10px;
-	border: 2px solid rgb(39, 39, 39);
-}
 .skills li {
 	list-style: none;
 	position: relative;
@@ -211,14 +184,47 @@ h1 {
 	font-weight: bold;
 	font-size: 17px;
 }
-
+#contact-me {
+	font-family: "Josefin Sans", monospace;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+.carousel-item {
+	color: white;
+	background-size: cover;
+	background-position: center center;
+	background-image: url("../images/Idea.jpg");
+	border-radius: 10px;
+	border: 2px solid rgb(39, 39, 39);
+	height: 300px;
+}
+.carousel-item p {
+	margin: 0px 50px 0px 50px;
+	font-weight: bold !important;
+	font-family: "Josefin Sans", monospace;
+	font-weight: bold;
+}
+.carousel-item-1,
+.carousel-item-3,
+.carousel-item-4 {
+	font-size: 25px;
+}
+.carousel-item-2 {
+	font-size: 20px;
+}
 .platforms a {
 	color: #03a747;
 }
-
 .footer {
 	margin: 0px auto;
 	padding: 20px 0px 20px 0px;
+}
+.copyright {
+	font-family: "Josefin Sans", monospace;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
 }
 @media only screen and (max-width: 800px) {
 	nav ul {
