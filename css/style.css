@@ -128,7 +128,25 @@ h1 {
 	font-weight: bold;
 	font-size: 25px;
 }
-
+hr{
+	height: 20px;
+	color: white;
+}
+.cv-link a{
+	text-decoration: none;
+	color: #03a747;
+	font-family: "Syne", monospace;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.cv-link a:hover{
+	transform: scale(1.1);
+	background-color: #03a747;
+	border-radius: 2px;
+	color: black;
+	padding:10px;
+}
 .skills li {
 	list-style: none;
 	position: relative;
@@ -215,6 +233,12 @@ h1 {
 }
 .platforms a {
 	color: #03a747;
+}
+.platforms p{
+	font-family: "Josefin Sans", monospace;
+	font-weight: bold;
+	font-size: 17px;
+	color: white;
 }
 .footer {
 	margin: 0px auto;
